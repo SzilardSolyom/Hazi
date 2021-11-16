@@ -1,0 +1,25 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+    int k,i;
+    string s;
+    cout << "kerem a szoveget -->";
+    cin >> s;
+    cout << "k=";
+    cin >> k;
+    for(int i=0;i<k;i++){
+    int n = s.size();
+    char first= s[n-1];
+    for(int i=n-1;i>0;i--){
+        s[i]=s[i-1];
+    }
+    s[0] = first;
+    }
+    cout << s << endl;
+
+    return 0;
+}
